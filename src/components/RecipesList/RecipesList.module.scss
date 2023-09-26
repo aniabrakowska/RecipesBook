@@ -1,0 +1,55 @@
+.categoryInfo{
+    position: relative;
+    height: 40vh;
+    :global(img){
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: relative;
+        z-index: -1;
+    }
+    @media (min-width: 1200px) {
+        height: 100vh;
+        flex-basis: 40%;
+    }
+}
+.categoryImage{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5490196078);
+}
+.categoryRecipes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 1rem 0;
+    @media (min-width: 1200px) {
+        flex-basis: 60%;
+        height: 100vh;
+        padding: 2rem;
+        overflow-y: scroll;
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+}
+.recipeItem{
+    flex-basis: 40%;
+    margin-top: 1rem;
+    @media (min-width: 768px) {
+        flex-basis: 30%;
+    }
+    @media (min-width: 1450px) {
+        flex-basis: 22%;
+    }
+}
+.recipeName{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.2;
+
+}
+.recipeImage{
+    width: 100%;
+}

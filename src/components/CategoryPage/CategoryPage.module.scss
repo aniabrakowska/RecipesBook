@@ -1,0 +1,8 @@
+.categoryContainer{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    @media (min-width: 1200px) {
+        flex-direction: row;
+    }
+}

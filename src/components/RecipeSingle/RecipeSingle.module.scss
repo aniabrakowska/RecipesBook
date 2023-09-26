@@ -1,0 +1,136 @@
+.recipeContainer{
+    display: flex;
+    flex-direction: column;
+    @media (min-width: 1200px) {
+        flex-direction: row;
+    }
+}
+.recipeInfo{
+    position: relative;
+    height: 40vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding: 1rem;
+    @media (min-width:1200px) {
+        flex-basis: 40%;
+        height: 100vh;
+        padding: 4vw;
+    }
+}
+.logoContainer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-height: 18vh;
+    aspect-ratio: 1/1;
+    z-index: 1;
+    @media (min-width: 1200px) {
+        top: 4vh;
+        left: 2vw;
+        transform: none;
+        max-height: 25vh;
+    }
+}
+.logo{
+    width: 100%;
+    height: 100%;
+}
+.recipeImage{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.bgMask{
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-color: #0000008c;
+    z-index: 0;
+}
+.recipeName{
+    position: relative;
+    font-size: 22px;
+    font-weight: 400;
+    font-family: 'Lobster', cursive;
+    text-align: right;
+    margin: 1rem 0;
+    width: 75%;
+    padding: .5rem;
+    @media (min-width:1200px) {
+        font-size: 28px;
+    }
+    &:before{
+        position: absolute;
+        content: '';
+        bottom: 0;
+        right: 0;
+        width: 110%;
+        height: 1px;
+        background-color: #fff;
+    }
+}
+.recipeCat{
+    position: relative;
+    padding: 0 .5rem;
+    font-size: 12px;
+}
+.recipeContent{
+    padding: 5vw;
+    @media (min-width:1200px) {
+        flex-basis: 60%;
+        padding: 4vw;
+        max-height: 100vh;
+        overflow: scroll;
+        &::-webkit-scrollbar{
+            display: none;
+        }
+    }
+}
+.recipeIngredients, .recipeProcess{
+    padding: .5rem;
+}
+.recipeIngredientsTitile, .recipeProcessTitle{
+    font-size: 20px;
+    font-family: 'Lobster', cursive;
+    padding-bottom: .5rem;
+}
+
+.recipeIngredientsList{
+    line-height: 1.5;
+    margin: 0 0 1rem 0;
+    list-style: none;
+    @media (min-width: 1200px) {
+        margin: 1rem 0;
+    }
+    @media (min-width: 1450px) {
+        display: flex;
+        flex-wrap: wrap;
+        line-height: 1.7;
+    }
+}
+.recipeIngredientsItem{
+    position: relative;
+    @media (min-width: 1450px) {
+        flex-basis: 50%;
+        padding-right: 2rem;
+    }
+    &:before{
+        position: absolute;
+        content: '\2713';
+        top: 1px;
+        left: -1.5rem;
+    }
+}
+.recipeProcessList{
+    line-height: 1.2;
+    @media (min-width: 1200px) {
+        line-height: 1.5;
+        padding-top: 1rem;
+    }
+}

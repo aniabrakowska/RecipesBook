@@ -1,0 +1,23 @@
+body {
+  margin: 0;
+  color: #fff;
+  background-color: #181715;
+  font-family: 'Josefin Sans', sans-serif;
+  /* font-family: 'Lobster', cursive; */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+a, a:hover, a:focus, a:visited{
+  text-decoration: none;
+  color: inherit;
+}
