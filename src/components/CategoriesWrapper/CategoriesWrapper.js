@@ -54,12 +54,11 @@ const CategoriesWrapper = ( { withRecipes, splideDisplay } ) => {
         
             { splideDisplay ? (
                 <Splide 
-                aria-label="My Favorite Images"
                 options={optionsSplide} >
                     {renderCategoryItems(cats, withRecipes, splideDisplay)}
                     <SplideSlide key={`category_all`} className={styleItem.slideItem}>
-                        <Link to={`/category`}  className={styleItem.slideContainer}>
-                            <img src='http://serwer142787.lh.pl/images/default.jpg' alt='all recipes'  className={styleItem.image} />
+                        <Link to={`/RecipesBook/category`}  className={styleItem.slideContainer}>
+                            <img src='https://recipesbook.aniabrakowska.wroclaw.pl/default.jpg' alt='all recipes'  className={styleItem.image} />
                             <p className={styleItem.name}>Wszystkie</p>
                         </Link>
                     </SplideSlide>

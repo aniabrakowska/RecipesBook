@@ -22,7 +22,7 @@ const CategoryImage = ({categoryId}) => {
         }
     })
     if( CategoryImage === '' ){
-        CategoryImage = 'http://serwer142787.lh.pl/images/default.jpg';
+        CategoryImage = 'https://recipesbook.aniabrakowska.wroclaw.pl/default.jpg';
         CategoryAlt = 'Wszystkie przepisy';
     }
 

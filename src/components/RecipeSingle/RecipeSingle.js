@@ -13,16 +13,16 @@ const RecipeSingle = ( { name, id, category, ingredients, process, image } ) => 
             <div className={style.recipeInfo}>
                 <img src={image} className={style.recipeImage} alt={name} />
                 <div className={style.bgMask}></div>
-                <Link to='/' className={style.logoContainer}>
+                <Link to='/RecipesBook' className={style.logoContainer}>
                     <img
-                        src="http://serwer142787.lh.pl/images/logo_recipesbook.svg"
+                        src="https://recipesbook.aniabrakowska.wroclaw.pl/logo_recipesbook.svg"
                         className={style.logo}
                         alt="Recipes Book" 
                     />
                 </Link>
                 <h1 className={style.recipeName}>{name}</h1>
                 <div className={style.recipeCat}>Kategoria: 
-                    <Link to={`/category/${category}`} className={style.recipeCatLink}>
+                    <Link to={`/RecipesBook/category/${category}`} className={style.recipeCatLink}>
                         <CategoryName categoryId={category} />
                     </Link>
                 </div>

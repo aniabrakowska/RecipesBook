@@ -19,7 +19,7 @@ const RecipesList = ( {categoryId, recipes } ) => {
                 {
                     filteredRecipes.map(recipe => (
                         <div key={`recipe-${recipe.id}`} className={style.recipeItem}>
-                            <Link to={`/recipe/${recipe.id}`} className={style.recipeContainer}>
+                            <Link to={`/RecipesBook/recipe/${recipe.id}`} className={style.recipeContainer}>
                                 <img src={recipe.image} alt={recipe.name} className={style.recipeImage}/>
                                 <h2 className={style.recipeName}>{recipe.name}</h2>
                             </Link>

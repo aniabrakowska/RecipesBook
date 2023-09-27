@@ -6,9 +6,9 @@ const CategoriesSelect = ({changeCat, cats, specificCat}) =>{
 
     return(
         <>
-            <Link to='/' className={style.logoContainer}>
+            <Link to='/RecipesBook' className={style.logoContainer}>
                 <img
-                    src="http://serwer142787.lh.pl/images/logo_recipesbook.svg"
+                    src="https://recipesbook.aniabrakowska.wroclaw.pl/logo_recipesbook.svg"
                     className={style.logo}
                     alt="Recipes Book" 
                 />

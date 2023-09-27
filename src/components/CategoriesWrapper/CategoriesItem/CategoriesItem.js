@@ -14,7 +14,7 @@ const CategoriesItem = ({name, id, image, withRecipes, splideDisplay}) => {
             { splideDisplay ? 
             <>
                 <SplideSlide key={`category_${id}`} className={style.slideItem} >
-                    <Link to={`/category/${id}`} className={style.slideContainer} >
+                    <Link to={`/RecipesBook/category/${id}`} className={style.slideContainer} >
                         <img src={image} alt={name} className={style.image} />
                         <p className={style.name}>{name}</p>
                     </Link>
@@ -23,7 +23,7 @@ const CategoriesItem = ({name, id, image, withRecipes, splideDisplay}) => {
             </> : 
             <>
                 <li key={`category_${id}`} className={style.li} >
-                    <Link to={`/category/${id}`} >
+                    <Link to={`/RecipesBook/category/${id}`} >
                         <img src={image} alt={name} className={style.image} />
                         <p>{name}</p>
                     </Link>

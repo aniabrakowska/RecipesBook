@@ -14,7 +14,7 @@ const Root = () => {
             <div className={style.bgMask}></div>
             <div className={style.containerHeader}>
                 <img 
-                    src="http://serwer142787.lh.pl/images/logo_recipesbook.svg"
+                    src="https://recipesbook.aniabrakowska.wroclaw.pl/logo_recipesbook.svg"
                     className={style.logo}
                     alt="Recipes Book" 
                 />

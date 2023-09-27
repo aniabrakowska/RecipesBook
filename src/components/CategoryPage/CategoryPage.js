@@ -53,7 +53,7 @@ class CategoryPage extends React.Component {
             this.setState({ specificId: selectedCategory  });
         }
         
-        window.history.pushState(null, null, `/category/${selectedCategory}`);
+        window.history.pushState(null, null, `/RecipesBook/category/${selectedCategory}`);
 
     }
 

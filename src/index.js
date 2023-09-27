@@ -12,28 +12,28 @@ import Category from './routes/category';
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/RecipesBook",
     element: <Root />,
     errorElement: <ErrorPage />,
   },
   {
-    path: "/category",
+    path: "/RecipesBook/category",
     element: <Category />,
   },
   {
-    path: "/category/:catId",
+    path: "/RecipesBook/category/:catId",
     element: <Category />,
   },
   {
-    path: "/categories",
+    path: "/RecipesBook/categories",
     element: <Categories />,
   },
   {
-    path: "/categories/:categoryId",
+    path: "/RecipesBook/categories/:categoryId",
     element: <Category/>,
   },
   {
-    path: "recipe/:recipeId",
+    path: "/RecipesBook/recipe/:recipeId",
     element: <Recipe />,
   }
 ]);
